@@ -25,13 +25,20 @@ var twoSum = function (nums, target) {
 const result = twoSum([2, 7, 11, 15], 9)
 console.log(result)
 
-// Explanation
+/*
 
-// This function takes in two parameters:
-// nums: an array of integers
-// target: an integer
+📌 Explanation
 
-// It returns an array of two integers that add up to the target number, or an empty array if no such integers are found.
-// The function first creates a new Map object called map, which will be used to store the values and indices of the elements in the array.
-// It then iterates through the array using a for loop. For each element in the array, it checks if target - nums[i] (i.e. the number that is needed to add up to the target number with the current element) is already in the map. If it is, the function returns an array with the index of the current element and the value in the map corresponding to target - nums[i]. If it is not, the function adds the current element and its index to the map using the set method.
-// Finally, if the loop completes without returning an array, the function returns an empty array, since no such integers were found.
+This function takes in two parameters:
+  nums: an array of integers
+  target: an integer
+
+It returns an array of two integers that add up to the target number, or an empty array if no such integers are found.
+
+The function first creates a new Map object called map, which will be used to store the values and indices of the elements in the array.
+
+It then iterates through the array using a for loop. For each element in the array, it checks if target - nums[i] (i.e. the number that is needed to add up to the target number with the current element) is already in the map. If it is, the function returns an array with the index of the current element and the value in the map corresponding to target - nums[i]. If it is not, the function adds the current element and its index to the map using the set method.
+
+Finally, if the loop completes without returning an array, the function returns an empty array, since no such integers were found.
+
+*/
